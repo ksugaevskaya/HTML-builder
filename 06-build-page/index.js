@@ -46,7 +46,7 @@ const projectDist = async () => {
     }
   }
 
-  const pathToPDStyles = path.join(__dirname, 'project-dist', 'styles.css');
+  const pathToPDStyles = path.join(__dirname, 'project-dist', 'style.css');
   await fs.writeFile(pathToPDStyles, allStyleFiles.join('\n'));
 
   const pathToTemplate = path.join(__dirname, 'template.html');
